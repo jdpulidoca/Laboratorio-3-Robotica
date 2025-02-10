@@ -139,7 +139,8 @@ Finzalizada la instalacion de Miniforge3, abrimos una terminal CMD con permiso d
 ```bash
 conda install mamba -c conda-forge
 ```
-Este comando descarga e instalara el gestor de paquetes mamba. Posterior, se debe crear y configurar la carpeta donde se va ha instalar la distribucion de ROS, para eso ejecutamos el sisguiente paquete comandos:
+
+Este comando descarga e instalara el gestor de paquetes mamba, toca estar atentanto ya que se pedira autorizacion de instalacion finalizada la descarga de los paquetes necesarios para la instalacion, para confirma la instalacion se debe escribir la letra **Y** de Yes y pulsar la tecla **Enter** para confirmar la instalacion. Posterior, se debe crear y configurar la carpeta donde se va ha instalar la distribucion de ROS, para eso ejecutamos el sisguiente paquete comandos:
 
 ```bash
 mamba create -n ros_env python=3.11
@@ -148,14 +149,17 @@ conda config --env --add channels conda-forge
 conda config --env --add channels robostack-staging
 conda config --env --remove channels defaults
 ```
+
 En este paquete de comando se crea el entorno **ros_env** en Conda, donde se ejecutara la distribucion de ROS, ademas de instalar la version especifica de Python necesaria para ejecutar ROS ene le entorno. Posterior, se procede a realizar la isntalcion de ROS2, cabe señalar que por cada distribucion de ROS que dispone RoboStack el comando de instalacion cambia, disponiendo de:
 
 <ul>  
 <li> El comando para instalar ROS1 Noetic Ninjemys es el siguiente:
 </ul>
+
 ```bash
 mamba install ros-noetic-desktop
 ```
+
 <ul>  
 <li> El comando para instalar ROS2 Humble Hawksbill es el siguiente:
 </ul>
@@ -163,15 +167,33 @@ mamba install ros-noetic-desktop
 ```bash
 mamba install ros-humble-desktop
 ```
+
 <ul>  
 <li> El comando para instalar ROS2 Jazzy Jalisco es el siguiente:
 </ul>
+
 ```bash
 mamba install ros-jazzy-desktop
 ```
 
-En nunestro caso, se opto por instalar **ROS2 Humble Hawksbill** al ser la version mas estable de ROS2 que dispone RoboStack. Cabe aclarar que si se quiere instalar ROS2 Jazzy Jalisco, el paquete de comandos para crear el entorno **ros_env**
+En nunestro caso, se opto por instalar **ROS2 Humble Hawksbill** al ser la version mas estable de ROS2 que dispone RoboStack. 
 
+<div align="center">
+  <img src="./Fotos/ros.png" width="300" title="preview">
+  <p>Figura 10. ROS2 Humble Hawksbill [1].</p>
+</div>
+
+Cabe aclarar que si se quiere instalar ROS2 Jazzy Jalisco, el paquete de comandos para crear el entorno **ros_env** para Jazzy Jalisco es el siguiente:
+
+```bash
+mamba create -n ros_env python=3.11
+mamba activate ros_env
+conda config --env --add channels conda-forge
+conda config --env --add channels robostack-staging
+conda config --env --add channels robostack-jazzy
+conda config --env --remove channels defaults
+```
+El procedimiento de instalacion de **ROS2 Humble Hawksbill** empezara con la descarga de todos los paquetes que encesita ROS2, posterior se pedira autorizacion de instalacion finalizada la descarga de los paquetes, para confirma la instalacion se debe escribir la letra **Y** de Yes y pulsar la tecla **Enter** para confirmar la instalacion. ESte proceso puede suele ser algo lento, por lo cual se puede dar el caso de que la instlacion se vea interrumpida
 <ul>  
 <li> Resumen con los pasos principales de proceso de instalacion de ROS2.
 <li> Procedimiento utilizado: Ubuntu, Robostack, WSL.
