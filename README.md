@@ -253,8 +253,22 @@ En caso de requerir actualizar el entorno **ros_env**, ejecutamos el comando `ma
 ```bash
 rviz2
 ```
+<div align="center">
+  <img src="./Fotos/env2.PNG" width="800" title="preview">
+  <p>Figura 12. Ejecucion rviz2.</p>
+</div>
+
+<div align="center">
+  <img src="./Fotos/rviz2.PNG" width="600" title="preview">
+  <p>Figura 13. Interfaz rviz2.</p>
+</div>
 
 Algunas dificultades de instalacion que tuvimos fueron que se uso el pauquete de comandos para crear el entorno para ROS2 Jazzy Jalisco y se instalo ROS2 Humble Hawksbill, y ROS2 no se ejcutaba de forma optima, lo que ocasianando que se eliminar ROS2 y realizar la instlacion correcta. Otra situacion, es que que ROS2 se activo pero no reconozcio los comandos o herramientas ingresados, se reinicio ROS2 varias veces para ver si era un problema de inicializacion y si no funcionaba se actulizaban todos los paquets del entorno y se reinciba ROS2, posterior los comandos ya funcionaban
+
+## Vinculacion ROS2-Matlab
+
+
+
 
 <ul>  
 <li> Ejercicios iniciales realizados con scripts de Matlab y/o Python y/o comandos de ROS, mostrando los videos de sus resultados: viewer de ROS, Rviz, ventanas de Matlat y/o Simulink.
