@@ -212,7 +212,7 @@ y se apagara con el comando:
 mamba deactivate
 ```
 <div align="center">
-  <img src="./Fotos/env.PNG" width="300" title="preview">
+  <img src="./Fotos/env.PNG" width="800" title="preview">
   <p>Figura 11. ROS2 Activo.</p>
 </div>
 
