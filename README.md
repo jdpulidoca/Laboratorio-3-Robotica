@@ -66,7 +66,7 @@ Gestión de Nodos	|	No hay ciclo de vida de nodos	|	Nodos con gestión de ciclo 
 
 ### Distribuciones de ROS2
 
-Actualmente existen 12 distribuciones de ROS2, de las cuales 3 siguen recibiendo soporte y 1 en desarrollo; en cuanto a ROS1 solo queda una version soportada, la cual busca dar transicion entre ROS1 y ROS2.
+Actualmente existen 12 distribuciones de ROS2, de las cuales 3 siguen recibiendo soporte y 1 en desarrollo; en cuanto a ROS1 solo queda una version soportada, la cual busca dar transicion entre ROS1 y ROS2. La versiones nombradas como LTS o Long-Term Support, suelen ser la versiones recomendadas a instalar debido a que no solo son las mas estables sino que tambien las que siguen recibiendo soporte.
 
 <div align="center">
   <img src="./Fotos/distro.PNG" width="800" title="preview">
@@ -94,6 +94,11 @@ En primera instacia, cabe señalar que inicialmente las guias oficiales de insta
 
 Como se puede ver, el uso de WSL implica el uso mas recursos y la instalacion directa con Linux requiere saber manejar particones e instalacion de sistemas operativos, por lo cual se opto por la opcion de realizar la instalacion mediante RoboStack, una serie de distribuciones tanto de ROS1 como ROS2 que usa el gestor de paquetes Conda como ambiente de ejecucion con el fin de no solo permitir la facil instalacion de ROS en sistemas diferentes de Linux sino tambien eliminar la dependendencia de usar maquinas virtuales, lo que tambien mejora el rendimiento de ROS.
 
+<div align="center">
+  <img src="./Fotos/log1.PNG" width="400" title="preview">
+  <p>Figura 3. Logo RoboStack.</p>
+</div>
+
 <ul>  
 <li> Resumen con los pasos principales de proceso de instalacion de ROS2.
 <li> Procedimiento utilizado: Ubuntu, Robostack, WSL.
@@ -109,6 +114,8 @@ Como se puede ver, el uso de WSL implica el uso mas recursos y la instalacion di
 
 [1] Open Robotics, Documentación de ROS. 2025. Consultado el 6 de Febrero de 2025. [En linea]: https://docs.ros.org/
 
-[2] Open Robotics. ROS 2 Documentation. 2025. Consultado el 6 de Febrero de 2025. [En linea]: https://docs.ros.org/en/humble/index.html#
+[2] Wayne Williams. Windows Subsystem for Linux (WSL) hits version 1.0.0. .2022. [En linea]:https://betanews.com/2022/11/16/windows-subsystem-for-linux-wsl-1/
 
-[3] Robostack. Robostack. 2025. Consultado el 6 de Febrero de 2025. [En linea]: https://robostack.github.io/
+[3] Open Robotics. ROS 2 Documentation. 2025. Consultado el 6 de Febrero de 2025. [En linea]: https://docs.ros.org/en/humble/index.html#
+
+[4] Robostack. Robostack. 2025. Consultado el 6 de Febrero de 2025. [En linea]: https://robostack.github.io/
