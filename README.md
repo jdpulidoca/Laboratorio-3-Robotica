@@ -11,7 +11,7 @@ ROS 2 (Robot Operating System 2) es la segunda generación de ROS, un framework 
 
 <div align="center">
   <img src="./Fotos/log.PNG" width="400" title="preview">
-  <p>Figura 1. Logo ROS.</p>
+  <p>Figura 1. Logo ROS [1].</p>
 </div>
 
 ### Características principales de ROS 2
@@ -70,7 +70,7 @@ Actualmente existen 12 distribuciones de ROS2, de las cuales 3 siguen recibiendo
 
 <div align="center">
   <img src="./Fotos/distro.PNG" width="800" title="preview">
-  <p>Figura 2. Distribuciones activas de ROS.</p>
+  <p>Figura 2. Distribuciones activas de ROS [1].</p>
 </div>
 
 |	Distribución	|	Fecha de lanzamiento	|	Fecha de fin de soporte (EOL)	|	Duración del soporte	|
@@ -92,12 +92,85 @@ Actualmente existen 12 distribuciones de ROS2, de las cuales 3 siguen recibiendo
 
 En primera instacia, cabe señalar que inicialmente las guias oficiales de instalacion de cualquier version de ROS, ya sea el 1 o el 2, exigian tener instalada alguna version de Linux compatible con la respectiva distribucion de ROS y realizar la instalacion en Linux. En los ultimos años, se ha dado la posibilidad de realizar la instalacion en Windows 10 y 11, gracias al aplicativo desarrollado por Microsoft, Windows Subsystem for Linux o WSL el cual permite correr una maquina virtual basica con alguna de las distribuciones de Linux recomendada, a su vez que correr ROS sobre esta.
 
+<div align="center">
+  <img src="./Fotos/linux.jpg" width="500" title="preview">
+  <p>Figura 3. Ejemplo WSL con varias distribuciones de Linux [2].</p>
+</div>
+
 Como se puede ver, el uso de WSL implica el uso mas recursos y la instalacion directa con Linux requiere saber manejar particones e instalacion de sistemas operativos, por lo cual se opto por la opcion de realizar la instalacion mediante RoboStack, una serie de distribuciones tanto de ROS1 como ROS2 que usa el gestor de paquetes Conda como ambiente de ejecucion con el fin de no solo permitir la facil instalacion de ROS en sistemas diferentes de Linux sino tambien eliminar la dependendencia de usar maquinas virtuales, lo que tambien mejora el rendimiento de ROS.
 
 <div align="center">
   <img src="./Fotos/log1.PNG" width="400" title="preview">
-  <p>Figura 3. Logo RoboStack.</p>
+  <p>Figura 4. Logo RoboStack [4].</p>
 </div>
+
+<div align="center">
+  <img src="./Fotos/win.png" width="400" title="preview">
+  <p>Figura 5. Windows 10.</p>
+</div>
+
+En busca de facilitar el laboratorio, se uso la instalacion de **RoboStack** para **Windows 10**, el cual dispone de 2 distribuciones de ROS2 (Humble Hawksbill y Jazzy Jalisco) y 1 distribucion de ROS1 (Noetic Ninjemys). Para realizar la instlacion se siguieron las intrucciones dadas en la Pagina de [RoboStack](https://robostack.github.io/GettingStarted.html). En primera instancia, es necesario instalar el gestor de paquetes Conda, si aun no esta instalada. Para eso necesita inicialmente necesitamos Miniforge3 para instalar mamba. En la propia pagina de RoboStack se proporciona vinculo a la pagina de [Conda-Forge](https://conda-forge.org/) para descarga su instalador para sistemas Windows.
+
+<div align="center">
+  <img src="./Fotos/conda1.PNG" width="900" title="preview">
+  <p>Figura 6. Pagina RoboStack y vinculo para descarga Miniforge3.</p>
+</div>
+
+Buscamos el instalador **Miniforge3-Windows-x86_64.exe** , lo ejecutamos y procedemos a la instalacion. Cabe señalar que el Miniforge3, se instalara por defecto en una carpeta vacia con el mismo nombre en la raiz del usuario, se recomienda no modificar esta direccion o si se hace elegir una carpeat que este completamente vacia para realizar la instalacion.
+
+<div align="center">
+  <img src="./Fotos/forg1.PNG" width="400" title="preview">
+  <p>Figura 7. Instalador MiniForge3.</p>
+</div>
+<div align="center">
+  <img src="./Fotos/forg3.PNG" width="400" title="preview">
+  <p>Figura 8. Direccion de la instalacionde Miniforge3.</p>
+</div>
+
+Un punto muy importante de estea instalacion, que se debe marca la casilla de incluir Miniforge3 en PATH de variables de entorno, independiente si el instalador dice que es una opcion no recomendada, debido a que sin esto no se prodan usar los comandos de Miniforge3 ya que el sistema no sabra donde buscarlos.
+
+<div align="center">
+  <img src="./Fotos/forg4.PNG" width="400" title="preview">
+  <p>Figura 9. Habilitacion PATH para Miniforge3.</p>
+</div>
+
+Finzalizada la instalacion de Miniforge3, abrimos una terminal CMD con permiso de administrador y ejecutamos el siguientes comando:
+
+```bash
+conda install mamba -c conda-forge
+```
+Este comando descarga e instalara el gestor de paquetes mamba. Posterior, se debe crear y configurar la carpeta donde se va ha instalar la distribucion de ROS, para eso ejecutamos el sisguiente paquete comandos:
+
+```bash
+mamba create -n ros_env python=3.11
+mamba activate ros_env
+conda config --env --add channels conda-forge
+conda config --env --add channels robostack-staging
+conda config --env --remove channels defaults
+```
+En este paquete de comando se crea el entorno **ros_env** en Conda, donde se ejecutara la distribucion de ROS, ademas de instalar la version especifica de Python necesaria para ejecutar ROS ene le entorno. Posterior, se procede a realizar la isntalcion de ROS2, cabe señalar que por cada distribucion de ROS que dispone RoboStack el comando de instalacion cambia, disponiendo de:
+
+<ul>  
+<li> El comando para instalar ROS1 Noetic Ninjemys es el siguiente:
+</ul>
+```bash
+mamba install ros-noetic-desktop
+```
+<ul>  
+<li> El comando para instalar ROS2 Humble Hawksbill es el siguiente:
+</ul>
+
+```bash
+mamba install ros-humble-desktop
+```
+<ul>  
+<li> El comando para instalar ROS2 Jazzy Jalisco es el siguiente:
+</ul>
+```bash
+mamba install ros-jazzy-desktop
+```
+
+En nunestro caso, se opto por instalar **ROS2 Humble Hawksbill** al ser la version mas estable de ROS2 que dispone RoboStack. Cabe aclarar que si se quiere instalar ROS2 Jazzy Jalisco, el paquete de comandos para crear el entorno **ros_env**
 
 <ul>  
 <li> Resumen con los pasos principales de proceso de instalacion de ROS2.
