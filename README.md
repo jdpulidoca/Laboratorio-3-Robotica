@@ -9,6 +9,11 @@ Acontinuacion se presentan las actividades realizadas en este laboarztorio cuyo 
 
 ROS 2 (Robot Operating System 2) es la segunda generación de ROS, un framework de código abierto para el desarrollo de robots. Se creó para mejorar las limitaciones de ROS 1, proporcionando mayor seguridad, escalabilidad y compatibilidad con sistemas embebidos y en tiempo real.
 
+<div align="center">
+  <img src="./Fotos/log.PNG" width="400" title="preview">
+  <p>Figura 1. Logo ROS.</p>
+</div>
+
 ### Características principales de ROS 2
 
 ##### Basado en DDS (Data Distribution Service)
@@ -59,6 +64,10 @@ Multiplataforma	|	Principalmente en Linux	|	Linux, Windows, macOS, embebidos	|
 Seguridad	|	No incorporada por defecto	|	Seguridad y cifrado incluidos	|
 Gestión de Nodos	|	No hay ciclo de vida de nodos	|	Nodos con gestión de ciclo de vida	|
 
+<div align="center">
+  <img src="./Fotos/distro.PNG" width="800" title="preview">
+  <p>Figura 2. Distribuciones activas de ROS.</p>
+</div>
 
 ## Instalacion de ROS2
 
