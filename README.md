@@ -254,11 +254,9 @@ En caso de requerir actualizar el entorno **ros_env**, ejecutamos el comando `ma
 rviz2
 ```
 
+Algunas dificultades de instalacion que tuvimos fueron que se uso el pauquete de comandos para crear el entorno para ROS2 Jazzy Jalisco y se instalo ROS2 Humble Hawksbill, y ROS2 no se ejcutaba de forma optima, lo que ocasianando que se eliminar ROS2 y realizar la instlacion correcta. Otra situacion, es que que ROS2 se activo pero no reconozcio los comandos o herramientas ingresados, se reinicio ROS2 varias veces para ver si era un problema de inicializacion y si no funcionaba se actulizaban todos los paquets del entorno y se reinciba ROS2, posterior los comandos ya funcionaban
+
 <ul>  
-<li> Resumen con los pasos principales de proceso de instalacion de ROS2.
-<li> Procedimiento utilizado: Ubuntu, Robostack, WSL.
-<li> Sistema operativo sobre el que hicieron la instalacion.
-<li> Dificultades de instalacion o de arranque principales.
 <li> Ejercicios iniciales realizados con scripts de Matlab y/o Python y/o comandos de ROS, mostrando los videos de sus resultados: viewer de ROS, Rviz, ventanas de Matlat y/o Simulink.
 <li> Uso de Dynamixel Wizard: par´ametros de motor utilizados, comandos, resultados en fotos y/o videos
 </ul>
