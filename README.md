@@ -275,7 +275,9 @@ Algunas dificultades de instalacion que tuvimos fueron que se uso el pauquete de
 <li> Uso de Dynamixel Wizard: par´ametros de motor utilizados, comandos, resultados en fotos y/o videos
 </ul>
 
+## Uso de Dynamixel Wizard 2.0
 
+Para verificar el estado de los motores marca Dynamixel, se utiliza el software de la misma empresa Dynamixel Wizard 2.0. Este se puede descargar  
 
 # Referencias
 
