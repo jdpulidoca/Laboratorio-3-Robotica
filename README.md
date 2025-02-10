@@ -193,7 +193,67 @@ conda config --env --add channels robostack-staging
 conda config --env --add channels robostack-jazzy
 conda config --env --remove channels defaults
 ```
-El procedimiento de instalacion de **ROS2 Humble Hawksbill** empezara con la descarga de todos los paquetes que encesita ROS2, posterior se pedira autorizacion de instalacion finalizada la descarga de los paquetes, para confirma la instalacion se debe escribir la letra **Y** de Yes y pulsar la tecla **Enter** para confirmar la instalacion. ESte proceso puede suele ser algo lento, por lo cual se puede dar el caso de que la instlacion se vea interrumpida
+El procedimiento de instalacion de **ROS2 Humble Hawksbill** empezara con la descarga de todos los paquetes que encesita ROS2, posterior se pedira autorizacion de instalacion finalizada la descarga de los paquetes, para confirma la instalacion se debe escribir la letra **Y** de Yes y pulsar la tecla **Enter** para confirmar la instalacion. Este proceso puede suele ser algo lento, por lo cual se puede dar el caso de que la instlacion se vea interrumpida, en caso de ocurrir se puede volver a ejecutar el comando de instalacion y este buscara reanudar la instalacion en el mismo punto despues de verificar que se disponene de todos los paquetes. Finalizada la instlacion procedemos a reinicirar el el entorno **ros_env** mediante los siguientes comandos:
+
+```bash
+mamba deactivate
+mamba activate ros_env
+```
+
+De esta forma completando la instlacion de **ROS2 Humble Hawksbill** , y cada vez que se quiera iniciar ROS2 se debe abrir una terminal CMD como administrador y ejecutara el comando:
+
+```bash
+mamba activate ros_env
+```
+
+y se apagara con el comando:
+
+```bash
+mamba deactivate
+```
+<div align="center">
+  <img src="./Fotos/env.PNG" width="300" title="preview">
+  <p>Figura 11. ROS2 Activo.</p>
+</div>
+
+Se sabe que ROS2 esta activo si al incio de la linea de comando aparece **ros_env** <, omo se puede ver en la figura 11 y desactivado cunaod no aparece. Activo ROS2, podemos realizar la instalacion de otra serie de paquetes complementarios para que ROS2 pueda interactuar con otros programas como Visual Studio entre otros para el desarrollo de aplicacions locales, por lo general se ejecuta el siguiente comando:
+
+```bash
+mamba install compilers cmake pkg-config make ninja colcon-common-extensions catkin_tools rosdep
+```
+
+El cual instala todas las herramientas necesarias. El caso de la vinculacion con Visual Studio, el comando dependera de la version de Visual Studio que se disponga en el equipo. RoboStack solo es complatible con versiones de Visual Studio 2017, 2019 y 2022 con soporte para C++. Los caomandos para instalar estas dependencias son:
+
+<ul>  
+<li> Para Visual Studio 2017 es:
+</ul>
+
+```bash
+mamba install vs2017_win-64
+```
+
+<ul>  
+<li> Para Visual Studio 2019 es:
+</ul>
+
+```bash
+mamba install vs2019_win-64
+```
+
+<ul>  
+<li> Para Visual Studio 2022 es:
+</ul>
+
+```bash
+mamba install vs2022_win-64
+```
+
+En caso de requerir actualizar el entorno **ros_env**, ejecutamos el comando `mamba update --all`. Por ultimo, para probar que ROS2 quedo correctamente instalado se recomienda desplegar alguna de las herramientas que se disponen, se recomiendo ejecutar la herramienta ROS Visualization Tool o rviz2 debido a que es una de la mas importantes en el entorno de ROS engeneral, esto se realiza en el entorno activo de **ros_env** y con el comando:
+
+```bash
+rviz2
+```
+
 <ul>  
 <li> Resumen con los pasos principales de proceso de instalacion de ROS2.
 <li> Procedimiento utilizado: Ubuntu, Robostack, WSL.
