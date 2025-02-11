@@ -280,15 +280,22 @@ Algunas dificultades de instalacion que tuvimos fueron que se uso el pauquete de
 Para verificar el estado de los motores marca Dynamixel, se utiliza el software de la misma empresa Dynamixel Wizard 2.0. Éste se puede descargar en la página del [e-Manual de ROBOTIS](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/). Para el caso de Windows, la instalación se realiza por medio de un archio ejecutable que contiene los archivos necesarios del programa.
 
 <div align="center">
-  <img src="./Fotos/dynamixel1.PNG" width="800" title="preview">
+  <img src="./Fotos/dynamixel1.PNG" width="600" title="preview">
   <p>Figura *. Interfaz de Dynamixel Wizard 2.0.</p>
 </div>
 
 Posteriormente, se debe conectar el robot al computador por medio de USB. Es necesario indicarle al programa el puerto en el cual están conectados los motores. Para ello se debe ir a Options > Scan y seleccionar el puerto que el programa deberá escanear para reconocer los motores (figura *).
 
 <div align="center">
-  <img src="./Fotos/dynamixel2.PNG" width="800" title="preview">
+  <img src="./Fotos/dynamixel2.PNG" width="500" title="preview">
   <p>Figura *. Selección de puerto a escanear en Dynamixel Wizard 2.0.</p>
+</div>
+
+Una vez realizado el proceso de selección del puerto, se procede a hacer el escaneo de los motores, para ello se debe seleccionar Scan (figura *), se abrirá una vista en la parte central de programa, en donde habrá una barra de carga. A lo largo del proceso deben aparecer los motores del robot tanto en la ventana de escaneo como en el menú que se encuentra en la parte izquierda de la interfaz.
+
+<div align="center">
+  <img src="./Fotos/dynamixel3.PNG" width="500" title="preview">
+  <p>Figura *. Escaneo de motores en Dynamixel Wizard 2.0.</p>
 </div>
 
 # Referencias
