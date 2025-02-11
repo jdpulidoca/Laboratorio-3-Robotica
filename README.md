@@ -332,6 +332,13 @@ Una vez realizado el proceso de selección del puerto, se procede a hacer el esc
   <p>Figura *. Escaneo de motores en Dynamixel Wizard 2.0.</p>
 </div>
 
+Luego de escaneados los motores, es posible seleccionar cada uno y modificar sus parámetros (figura *), además, con el dial de la parte superior derecha, es posible modificar directamente la posición del servo. En el laboratorio se modificaron parámetros como el torque máximo y la velocidad máxima.
+
+<div align="center">
+  <img src="./Fotos/dynamixel4.PNG" width="500" title="preview">
+  <p>Figura *. Modificación de parámetros de los motores en Dynamixel Wizard 2.0.</p>
+</div>
+
 # Referencias
 
 [1] Open Robotics, Documentación de ROS. 2025. Consultado el 6 de Febrero de 2025. [En linea]: https://docs.ros.org/
