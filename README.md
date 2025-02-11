@@ -127,7 +127,7 @@ Buscamos el instalador **Miniforge3-Windows-x86_64.exe**, lo ejecutamos y proced
   <p>Figura 8. Direccion de la instalacionde Miniforge3.</p>
 </div>
 
-Un punto muy importante de estea instalacion, que se debe marca la casilla de incluir Miniforge3 en PATH de variables de entorno, independiente si el instalador dice que es una opcion no recomendada, debido a que sin esto no se prodan usar los comandos de Miniforge3 ya que el sistema no sabra donde buscarlos.
+Un punto muy importante de esta instalación es que se debe marcar la casilla para incluir Miniforge3 en el PATH de las variables de entorno, independientemente de que el instalador indique que no es una opción recomendada. Esto es necesario, ya que, sin esta configuración, no se podrán utilizar los comandos de Miniforge3, dado que el sistema no sabrá dónde buscarlos.
 
 <div align="center">
   <img src="./Fotos/forg4.PNG" width="400" title="preview">
