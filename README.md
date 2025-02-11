@@ -281,7 +281,14 @@ Para verificar el estado de los motores marca Dynamixel, se utiliza el software 
 
 <div align="center">
   <img src="./Fotos/dynamixel1.PNG" width="800" title="preview">
-  <p>Figura *. Interfaz de Dynamixel.</p>
+  <p>Figura *. Interfaz de Dynamixel Wizard 2.0.</p>
+</div>
+
+Posteriormente, se debe conectar el robot al computador por medio de USB. Es necesario indicarle al programa el puerto en el cual están conectados los motores. Para ello se debe ir a Options > Scan y seleccionar el puerto que el programa deberá escanear para reconocer los motores (figura *).
+
+<div align="center">
+  <img src="./Fotos/dynamixel2.PNG" width="800" title="preview">
+  <p>Figura *. Selección de puerto a escanear en Dynamixel Wizard 2.0.</p>
 </div>
 
 # Referencias
