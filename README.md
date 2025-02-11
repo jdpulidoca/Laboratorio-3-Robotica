@@ -134,13 +134,15 @@ Un punto muy importante de esta instalación es que se debe marcar la casilla pa
   <p>Figura 9. Habilitacion PATH para Miniforge3.</p>
 </div>
 
-Finzalizada la instalacion de Miniforge3, abrimos una terminal CMD con permiso de administrador y ejecutamos el siguientes comando:
+Una vez finalizada la instalación de Miniforge3, se debe abrir una terminal CMD con permisos de administrador y ejecutar el siguiente comando:
 
 ```bash
 conda install mamba -c conda-forge
 ```
 
-Este comando descarga e instalara el gestor de paquetes mamba, toca estar atentanto ya que se pedira autorizacion de instalacion finalizada la descarga de los paquetes necesarios para la instalacion, para confirma la instalacion se debe escribir la letra **Y** de Yes y pulsar la tecla **Enter** para confirmar la instalacion. Posterior, se debe crear y configurar la carpeta donde se va ha instalar la distribucion de ROS, para eso ejecutamos el sisguiente paquete comandos:
+Este comando descargará e instalará el gestor de paquetes Mamba. Es importante estar atento, ya que se solicitará autorización para la instalación una vez finalizada la descarga de los paquetes necesarios. Para confirmar la instalación, se debe escribir la letra **Y** (de Yes) y pulsar la tecla **Enter**.
+
+Posteriormente, se debe crear y configurar la carpeta donde se instalará la distribución de ROS. Para ello, se deben ejecutar los siguientes comandos:
 
 ```bash
 mamba create -n ros_env python=3.11
