@@ -3,7 +3,7 @@
 #### Julian David Pulido Castañeda
 #### Omar Armando Pérez Ospino
 
-Acontinuacion se presentan las actividades realizadas en este laboarztorio cuyo objetivo era familiarizarnos con las herramientas que existen actualmente para el desarrollo de proyectos o procesos de robotica coordinados.
+En este laboratorio, realizamos diversas actividades con el objetivo de familiarizarnos con las herramientas actuales para el desarrollo de proyectos o procesos de robótica coordinados.
 
 ## Que es ROS2
 
