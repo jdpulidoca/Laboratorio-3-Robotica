@@ -279,6 +279,11 @@ Algunas dificultades de instalacion que tuvimos fueron que se uso el pauquete de
 
 Para verificar el estado de los motores marca Dynamixel, se utiliza el software de la misma empresa Dynamixel Wizard 2.0. Éste se puede descargar en la página del [e-Manual de ROBOTIS](https://emanual.robotis.com/docs/en/software/dynamixel/dynamixel_wizard2/). Para el caso de Windows, la instalación se realiza por medio de un archio ejecutable que contiene los archivos necesarios del programa.
 
+<div align="center">
+  <img src="./Fotos/dynamixel1.PNG" width="800" title="preview">
+  <p>Figura *. Interfaz de Dynamixel.</p>
+</div>
+
 # Referencias
 
 [1] Open Robotics, Documentación de ROS. 2025. Consultado el 6 de Febrero de 2025. [En linea]: https://docs.ros.org/
