@@ -97,7 +97,7 @@ En primera instancia, cabe señalar que, inicialmente, las guías oficiales de i
   <p>Figura 3. Ejemplo WSL con varias distribuciones de Linux [2].</p>
 </div>
 
-Como se puede ver, el uso de WSL implica el uso mas recursos y la instalacion directa con Linux requiere saber manejar particones e instalacion de sistemas operativos, por lo cual se opto por la opcion de realizar la instalacion mediante RoboStack, una serie de distribuciones tanto de ROS1 como ROS2 que usa el gestor de paquetes Conda como ambiente de ejecucion con el fin de no solo permitir la facil instalacion de ROS en sistemas diferentes de Linux sino tambien eliminar la dependendencia de usar maquinas virtuales, lo que tambien mejora el rendimiento de ROS.
+Como se puede observar, el uso de WSL implica un mayor consumo de recursos, mientras que la instalación directa en Linux requiere conocimientos sobre la gestión de particiones e instalación de sistemas operativos. Por esta razón, se optó por realizar la instalación mediante RoboStack, una serie de distribuciones de ROS 1 y ROS 2 que utiliza el gestor de paquetes Conda como entorno de ejecución. Esto no solo facilita la instalación de ROS en sistemas operativos distintos a Linux, sino que también elimina la dependencia de máquinas virtuales, mejorando así el rendimiento de ROS.
 
 <div align="center">
   <img src="./Fotos/log1.PNG" width="400" title="preview">
