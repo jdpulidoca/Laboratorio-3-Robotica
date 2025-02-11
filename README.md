@@ -90,7 +90,7 @@ Actualmente existen 12 distribuciones de ROS2, de las cuales 3 siguen recibiendo
 
 ## Instalacion de ROS2
 
-En primera instacia, cabe señalar que inicialmente las guias oficiales de instalacion de cualquier version de ROS, ya sea el 1 o el 2, exigian tener instalada alguna version de Linux compatible con la respectiva distribucion de ROS y realizar la instalacion en Linux. En los ultimos años, se ha dado la posibilidad de realizar la instalacion en Windows 10 y 11, gracias al aplicativo desarrollado por Microsoft, Windows Subsystem for Linux o WSL el cual permite correr una maquina virtual basica con alguna de las distribuciones de Linux recomendada, a su vez que correr ROS sobre esta.
+En primera instancia, cabe señalar que, inicialmente, las guías oficiales de instalación de cualquier versión de ROS, ya sea ROS 1 o ROS 2, requerían tener instalada una versión compatible de Linux con la respectiva distribución de ROS y realizar la instalación en dicho sistema operativo. En los últimos años, se ha habilitado la posibilidad de instalar ROS en Windows 10 y 11 gracias a Windows Subsystem for Linux (WSL), un aplicativo desarrollado por Microsoft que permite ejecutar una máquina virtual básica con una de las distribuciones de Linux recomendadas, posibilitando así la ejecución de ROS sobre esta.
 
 <div align="center">
   <img src="./Fotos/linux.jpg" width="500" title="preview">
