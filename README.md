@@ -109,7 +109,7 @@ Como se puede observar, el uso de WSL implica un mayor consumo de recursos, mien
   <p>Figura 5. Windows 10.</p>
 </div>
 
-En busca de facilitar el laboratorio, se uso la instalacion de **RoboStack** para **Windows 10**, el cual dispone de 2 distribuciones de ROS2 (Humble Hawksbill y Jazzy Jalisco) y 1 distribucion de ROS1 (Noetic Ninjemys). Para realizar la instlacion se siguieron las intrucciones dadas en la Pagina de [RoboStack](https://robostack.github.io/GettingStarted.html). En primera instancia, es necesario instalar el gestor de paquetes Conda, si aun no esta instalada. Para eso necesita inicialmente necesitamos Miniforge3 para instalar mamba. En la propia pagina de RoboStack se proporciona vinculo a la pagina de [Conda-Forge](https://conda-forge.org/) para descarga su instalador para sistemas Windows.
+Con el objetivo de facilitar el laboratorio, se utilizó la instalación de **RoboStack** en **Windows 10**, RoboStack en Windows 10, el cual dispone de dos distribuciones de ROS 2 (Humble Hawksbill y Jazzy Jalisco) y una distribución de ROS 1 (Noetic Ninjemys). Para realizar la instalación, se siguieron las instrucciones proporcionadas en la página de [RoboStack](https://robostack.github.io/GettingStarted.html). En primer lugar, es necesario instalar el gestor de paquetes Conda si aún no está instalado. Para ello, se requiere Miniforge3, que permite instalar Mamba. En la propia página de RoboStack se proporciona un enlace a la página de [Conda-Forge](https://conda-forge.org/), donde se puede descargar el instalador para sistemas Windows.
 
 <div align="center">
   <img src="./Fotos/conda1.PNG" width="900" title="preview">
