@@ -152,7 +152,9 @@ conda config --env --add channels robostack-staging
 conda config --env --remove channels defaults
 ```
 
-En este paquete de comando se crea el entorno **ros_env** en Conda, donde se ejecutara la distribucion de ROS, ademas de instalar la version especifica de Python necesaria para ejecutar ROS ene le entorno. Posterior, se procede a realizar la isntalcion de ROS2, cabe señalar que por cada distribucion de ROS que dispone RoboStack el comando de instalacion cambia, disponiendo de:
+En este conjunto de comandos, se crea el entorno **ros_env** en Conda, donde se ejecutará la distribución de ROS. Además, se instala la versión específica de Python necesaria para ejecutar ROS en el entorno.
+
+Posteriormente, se procede con la instalación de ROS 2. Cabe señalar que, para cada distribución de ROS disponible en RoboStack, el comando de instalación varía, disponiendo de:
 
 <ul>  
 <li> El comando para instalar ROS1 Noetic Ninjemys es el siguiente:
@@ -195,7 +197,11 @@ conda config --env --add channels robostack-staging
 conda config --env --add channels robostack-jazzy
 conda config --env --remove channels defaults
 ```
-El procedimiento de instalacion de **ROS2 Humble Hawksbill** empezara con la descarga de todos los paquetes que encesita ROS2, posterior se pedira autorizacion de instalacion finalizada la descarga de los paquetes, para confirma la instalacion se debe escribir la letra **Y** de Yes y pulsar la tecla **Enter** para confirmar la instalacion. Este proceso puede suele ser algo lento, por lo cual se puede dar el caso de que la instlacion se vea interrumpida, en caso de ocurrir se puede volver a ejecutar el comando de instalacion y este buscara reanudar la instalacion en el mismo punto despues de verificar que se disponene de todos los paquetes. Finalizada la instlacion procedemos a reinicirar el el entorno **ros_env** mediante los siguientes comandos:
+El procedimiento de instalación de **ROS 2 Humble Hawksbill** comenzará con la descarga de todos los paquetes necesarios. Posteriormente, se solicitará autorización para la instalación una vez finalizada la descarga. Para confirmar, se debe escribir la letra **Y** (Yes) y pulsar la tecla **Enter**.
+
+Este proceso puede ser algo lento, por lo que existe la posibilidad de que la instalación se vea interrumpida. En caso de que esto ocurra, se puede volver a ejecutar el comando de instalación, el cual intentará reanudar el proceso desde el mismo punto tras verificar la disponibilidad de los paquetes.
+
+Una vez finalizada la instalación, se debe reiniciar el entorno **ros_env** mediante los siguientes comandos:
 
 ```bash
 mamba deactivate
