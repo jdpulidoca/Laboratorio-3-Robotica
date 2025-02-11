@@ -267,8 +267,42 @@ Algunas dificultades de instalacion que tuvimos fueron que se uso el pauquete de
 
 ## Vinculacion ROS2-Matlab
 
+En primera instancia activamos ROS2, y posterior ejecutamos el comando:
 
+```bash
+ros2 run turtlesim turtlesim_node
+```
+Este comando nos depslegara una demo de una tortuga, la cual puede ser controlada accediedno a ella como un nodo de ROS2.
 
+<div align="center">
+  <img src="./Fotos/mat1.PNG" width="600" title="preview">
+  <p>Figura 14. Comando TurtleSim.</p>
+</div>
+
+<div align="center">
+  <img src="./Fotos/mat2.PNG" width="400" title="preview">
+  <p>Figura 15. TurtleSim.</p>
+</div>
+
+Posterior se abre Matlab, se busca si las toolbox Robotics System Toolbox y ROS Toolbox estan instaladas, sino se procede a instalarlas. Posterior, se crea un script para ejcutar los siguienets comandos:
+
+```Matlab
+%% Crear nodo en ROS 2
+ros2node = ros2node("matlab_node"); 
+
+%% Crear publicador en ROS 2
+velPub = ros2publisher(ros2node, "/turtle1/cmd_vel", "geometry_msgs/Twist");
+
+%% Crear mensaje de velocidad
+velMsg = ros2message(velPub);
+
+%% Configurar velocidad (1 m/s en X)
+velMsg.linear.x = 1;
+
+%% Enviar mensaje
+send(velPub, velMsg);
+pause(1);
+```
 
 <ul>  
 <li> Ejercicios iniciales realizados con scripts de Matlab y/o Python y/o comandos de ROS, mostrando los videos de sus resultados: viewer de ROS, Rviz, ventanas de Matlat y/o Simulink.
