@@ -116,7 +116,7 @@ Con el objetivo de facilitar el laboratorio, se utilizó la instalación de **Ro
   <p>Figura 6. Pagina RoboStack y vinculo para descarga Miniforge3.</p>
 </div>
 
-Buscamos el instalador **Miniforge3-Windows-x86_64.exe** , lo ejecutamos y procedemos a la instalacion. Cabe señalar que el Miniforge3, se instalara por defecto en una carpeta vacia con el mismo nombre en la raiz del usuario, se recomienda no modificar esta direccion o si se hace elegir una carpeat que este completamente vacia para realizar la instalacion.
+Buscamos el instalador **Miniforge3-Windows-x86_64.exe**, lo ejecutamos y procedemos con la instalación. Cabe señalar que Miniforge3 se instalará, por defecto, en una carpeta vacía con el mismo nombre en la raíz del usuario. Se recomienda no modificar esta ubicación o, en caso de hacerlo, elegir una carpeta que esté completamente vacía para evitar problemas durante la instalación.
 
 <div align="center">
   <img src="./Fotos/forg1.PNG" width="400" title="preview">
